@@ -10,10 +10,14 @@ Crie um array de objetos contendo:
 Utilize uma estrutura de repetição para mostrar apenas os produtos que custam mais de R$100,00.
 Exiba o nome dos produtos encontrados.
 */
-let produtos [
-{"Cartão de memória" , preco 120},
-{"CPU" , preco 450},
-{"fone" , preco 80},
-{"Monitor" , preco 560}
-]
-for ( let i = 0; i <produtos.length; i++)
+let produtos = [
+{ nome: "Cartão de memória" , preco: 120},
+{nome: "CPU" , preco: 450},
+{nome:"fone" , preco: 80},
+{nome:"Monitor" , preco: 560}
+];
+for(let i = 0; i < produtos.length; i++) {
+    if(produtos[i].preco > 100){
+console.log(produtos[i].nome);
+    }
+}
